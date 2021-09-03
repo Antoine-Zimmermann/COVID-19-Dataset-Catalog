@@ -1,0 +1,34 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix schema: <http://schema.org/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+
+<who>  a  ldp:RDFSource;
+  rdfs:comment "Metadata document about WHO"@en;
+  dct:creator  <https://w3id.org/people/az> .
+
+<who#this>  a  org:Organization;
+  rdfs:label
+    "World Health Organization"@en,
+    "WHO"@en;
+  skos:prefLabel "WHO"@en;
+  rdfs:comment """Founded in 1948, WHO is the United Nations agency that connects nations, partners and people to promote health, keep the world safe and serve the vulnerable – so everyone, everywhere can attain the highest level of health. (from https://www.who.int/about)"""@en;
+  rdfs:seeAlso  <https://www.who.int/>;
+  locn:address  [
+    a  locn:Address;
+    locn:fullAddress  """WHO Headquarters
+Avenue Appia 20
+1211
+Geneva 27
+Switzerland""";
+    schema:addressCountry  wd:Q39; # Switzerland
+    wgs84:lat 46.2327489;
+    wgs84:long 6.1343466
+  ];
+  owl:sameAs  wd:Q7817 .
