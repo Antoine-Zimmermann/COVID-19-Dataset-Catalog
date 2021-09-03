@@ -1,0 +1,40 @@
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dkg: <http://w3id.org/dkg/data/> .
+@prefix dkg-onto: <http://w3id.org/dkg/ontology/> .
+
+#Knowledge Graph of COVID-19 Literature
+# what: citation network of COVID-19 papers
+# who: IDLab, Ghent University, imec
+# website:  http://covid-kg.tools
+# github repo: https://github.com/GillesVandewiele/COVID-KG/
+# technology: RML + LDF
+# data model: RDF
+# query interface: https://query-covid19.linkeddatafragments.org
+# original data: https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge
+# Presented at ISWC2020
+# publication: Steenwinckel B., Vandewiele G., Rausch I., Heyvaert P., Taelman R., Colpaert P., Simoens P., Dimou A., De Turck F. and Ongenae F. Facilitating COVID-19 Meta-analysis Through a Literature Knowledge Graph. In Proc. of 19th International Semantic Web Conference (ISWC), 2-6 November 2020
+
+
+dkg:kg-covid-19-literature  a  dcat:Dataset, dkg-onto:Covid19-KG;
+   rdfs:label  "Knowledge Graph of COVID-19 Literature"@en;
+   rdfs:comment  "KG about COVID literature, containing citation network of COVID-19 papers, from IDLab, Ghent"@en;
+   dct:publisher  wd:Q1137665; # Ghent university
+   schema:url  "http://covid-kg.tools"^^xsd:anyURI;
+   rdfs:seeAlso  <https://github.com/GillesVandewiele/COVID-KG/>;
+   dct:format  []; # some rdf format
+   sd:endpoint  <https://query-covid19.linkeddatafragments.org>;
+   prov:wasDerivedFrom  [
+      a  dcat:dataset;
+      rdfs:seeAlso  <https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge>
+   ];
+   cito:citesAsAuthority  <https://dblp.org/rec/conf/semweb/SteenwinckelVRH20>;
+   dct:spatial  [ a dct:Location ];
+   dct:temporal  [ a dct:PeriodOfTime ] .
