@@ -2,7 +2,7 @@
 @prefix ldp: <http://www.w3.org/ns/ldp#> .
 
 <> a ldp:BasicContainer;
-   rdfs:label "organization container"@en;
-   rdfs:comment "An LDP container for the metadata documents of COVID-19-related organizations."@en;
+   rdfs:label "people container"@en;
+   rdfs:comment "An LDP container for the metadata documents of COVID-19-related people."@en;
    ldp:contains 
-      <emse>, <ieee>, <iso>, <w3c>, <who> .
+      <az> .

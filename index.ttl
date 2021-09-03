@@ -1,0 +1,8 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+
+<> a ldp:BasicContainer;
+   rdfs:label "COVID-19 dataset catalog"@en;
+   rdfs:comment "An LDP container for all the LDP containers in the repo related to COVID-19 datasets."@en;
+   ldp:contains 
+      <datasets>, <organizations>, <projects>, <people>, <publications> .

@@ -5,4 +5,4 @@
    rdfs:label "dataset container"@en;
    rdfs:comment "An LDP container for the metadata documents of COVID-19-related datasets."@en;
    ldp:contains 
-      <kg-covid-19-literature> .
+      <kg-covid-19-literature>  .
