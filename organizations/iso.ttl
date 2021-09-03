@@ -33,9 +33,4 @@ Switzerland""";
     wgs84:lat 46.2208026;
     wgs84:long 6.0986782
   ];
-  owl:sameAs  wd:Q15028;
-  org:hasSubOrganization
-    <organisation/tc12>,
-    <organisation/tc59>,
-    <organisation/tc205>,
-    <organisation/tc301> .
+  owl:sameAs  wd:Q15028 .

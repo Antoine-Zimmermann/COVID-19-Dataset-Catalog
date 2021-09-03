@@ -1,0 +1,25 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/elements/1.1/#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+
+<dkg>  a  ldp:RDFSource;
+  rdfs:comment "Metadata document about DKG"@en;
+  dct:creator  <https://w3id.org/people/az> .
+
+<dkg#this> rdf:type org:OrganizationalCollaboration, foaf:Project;
+     dct:title "Distributed Knowledge Graphs"@en;
+     dct:description  """
+Knowledge Graphs are a flexible way to represent interlinked information about virtually anything. People from a variety of application domains including biomedical research, public and open data, linguistics, journalism, and manufacturing publish, use, and investigate knowledge graphs. As the publication is done in a decentralised fashion across the web, the knowledge graphs form a distributed system.
+
+Due to the ever-increasing uptake of Knowledge Graph technologies in recent years, there are new challenges for research and development including dealing with the scale and the degree of distribution of knowledge graphs, while monitoring and maintaining data quality and privacy. Tackling these research challenges will need a stronger collaboration within the research community, and a joint effort to establish a more functional, decentralized Web of Data.
+
+The main aim of the Action is therefore to create a research community for deployable Distributed Knowledge Graph technologies that are standards-based, and open, embrace the FAIR principles, allow for access control and privacy protection, and enable the decentralised publishing of high quality data. To this end, the Action connects European researchers and practitioners from: (1) diverse application domains and (2) the whole life cycle of Distributed Knowledge Graphs, from provisioning to finding, accessing, integrating, programming, deploying, enriching, and analytics. The Action will develop practices for scalable, privacy-respecting, high quality and decentralised Knowledge Graph publication and consumption, reach out to the European industry, and formulate a research agenda.
+"""@en;
+
+     foaf:homepage <https://cost-dkg.eu/>;
+     rdfs:seeAlso <https://www.cost.eu/cost-action/distributed-knowledge-graphs/> .
+

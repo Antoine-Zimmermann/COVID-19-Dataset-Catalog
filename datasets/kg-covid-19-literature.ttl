@@ -25,6 +25,7 @@
 <kg-covid-19-literature> a ldp:RDFSource;
    rdfs:comment "Metadata document for the Knowledge Graph of COVID-19 Literature"@en .
 
+
 <kg-covid-19-literature#this>  a  dcat:Dataset, dkg-onto:Covid19-KG;
    rdfs:label  "Knowledge Graph of COVID-19 Literature"@en;
    rdfs:comment  "KG about COVID literature, containing citation network of COVID-19 papers, from IDLab, Ghent"@en;

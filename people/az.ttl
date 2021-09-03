@@ -1,0 +1,61 @@
+@prefix viaf: <http://viaf.org/ontology/1.1/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dblp: <http://dblp.uni-trier.de/rdf/schema-2015-01-26#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+
+<az>  a  ldp:RDFSource;
+  rdfs:comment "Metadata document about Antoine Zimmermann"@en;
+  dct:creator  <https://w3id.org/people/az> .
+
+<az#this>  a  prov:Person, schema:Person;
+  rdfs:label "Antoine Zimmermann";
+  rdfs:comment
+    "Chercheur français en Web sémantique"@fr,
+    """Antoine Zimmermann graduated from the École Nationale Supérieure d’Informatique et de Mathématiques Appliquées de Grenoble (ENSIMAG) and got a Master of Science from the Université Joseph Fourier, Grenoble, France. He hold a Doctorate in Computer Science from Université Joseph Fourier, where he defended in October 2008. Between February 2009 and September 2010, he worked at the Digital Enterprise Research Institute (now Insight NUI Galway), at the National University of Ireland, Galway. Between October 2010 and August 2011, he was a lecturer at Institut Nationale de Sciences Appliquées de Lyon (INSA Lyon) and a researcher at Laboratoire d’InfoRmatique en Image et Système d’information (LIRIS). Since September 2011, he is teaching at École des Mines de Saint-Étienne and is a member of Institut Henri Fayol. In February 2021, he defended he obtained his Habilitation à diriger des recherches from Université Jean Monnet, Saint-Étienne. He conducts his research in Laboratoire d’informatique, de modélisation et d’optimisation des systèmes. He was previously a membre of Laboratoire Hubert Curien.
+His research interests are related to knowledge representation and reasoning in open, decentralised environments such as the World Wide Web, where the notion of context of information is key. This leads him to investigate the fields of contextual reasoning, annotated logics, reasoning with provenance, time, uncertainty, fuzziness, access control; the Semantic Web, the Web of data, Linked Data, open data. Antoine is a believer in open standards and has participated in W3C standardisation groups.
+"""@en;
+  schema:givenName "Antoine";
+  schema:familyName "Zimmermann";
+  owl:sameAs
+    <https://dblp.org/pid/91/1410>,
+    <http://orcid.org/0000-0003-1502-6986>,
+    viaf:201186754,
+    viaf:316556112,
+    <https://w3id.org/scholarlydata/person/antoine-zimmermann>,
+    <http://w3id.org/people/az/me>,
+    wd:Q56447936;
+  rdfs:seeAlso
+    <https://www.emse.fr/~zimmermann/CV.html>,
+    <http://scholar.google.com/citations?user=Miw4DgIAAAAJ>,
+    <https://www.linkedin.com/in/antoinezimmermann/>,
+    <https://dblp.uni-trier.de/pid/91/1410.html>,
+    <http://www.researchgate.net/profile/Antoine_Zimmermann>,
+    <https://twitter.com/MonsieurAZ>;
+  schema:email "antoine.zimmermann@emse.fr";
+  org:hasMembership  [
+    a  org:Membership;
+    org:organization  <../organizations/emse#this>;
+    org:role  wd:Q3303220; # Maître assistant
+    org:memberDuring  [
+      a time:Interval;
+      time:hasBeginning [ time:inXSDDate "2012-09-01"^^xsd:dateTime ]
+    ]
+  ];
+  org:hasMembership  [
+    a  org:Membership;
+    org:organization  <../projects/dkg#this>;
+    org:memberDuring  [
+      a time:Interval;
+      time:hasBeginning [ time:inXSDDate "2020-09-23"^^xsd:dateTime ]
+    ]
+  ];
+  dblp:authorOf
+    <../publications/csur2021#this> .

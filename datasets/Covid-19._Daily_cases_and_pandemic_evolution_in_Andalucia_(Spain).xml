@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF[
+	<!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	<!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+	<!ENTITY owl 'http://www.w3.org/2002/07/owl#'>
+	<!ENTITY swivt 'http://semantic-mediawiki.org/swivt/1.0#'>
+	<!ENTITY wiki 'http://wiki.cost-dkg.eu/id/'>
+	<!ENTITY category 'http://wiki.cost-dkg.eu/id/Category-3A'>
+	<!ENTITY property 'http://wiki.cost-dkg.eu/id/Property-3A'>
+	<!ENTITY wikiurl 'http://wiki.cost-dkg.eu/wiki/'>
+]>
+
+<rdf:RDF
+	xmlns:rdf="&rdf;"
+	xmlns:rdfs="&rdfs;"
+	xmlns:owl ="&owl;"
+	xmlns:swivt="&swivt;"
+	xmlns:wiki="&wiki;"
+	xmlns:category="&category;"
+	xmlns:property="&property;"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+	<owl:Ontology rdf:about="http://wiki.cost-dkg.eu/wiki/Special:ExportRDF/Covid-2D19._Daily_cases_and_pandemic_evolution_in_Andalucia_-28Spain-29">
+		<swivt:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-03T17:08:01+02:00</swivt:creationDate>
+		<owl:imports rdf:resource="http://semantic-mediawiki.org/swivt/1.0"/>
+	</owl:Ontology>
+	<swivt:Subject rdf:about="http://wiki.cost-dkg.eu/id/Covid-2D19._Daily_cases_and_pandemic_evolution_in_Andalucia_-28Spain-29">
+		<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Dataset"/>
+		<rdfs:label>Covid-19. Daily cases and pandemic evolution in Andalucia (Spain)</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://wiki.cost-dkg.eu/wiki/Special:ExportRDF/Covid-2D19._Daily_cases_and_pandemic_evolution_in_Andalucia_-28Spain-29"/>
+		<swivt:page rdf:resource="http://wiki.cost-dkg.eu/wiki/Covid-2D19._Daily_cases_and_pandemic_evolution_in_Andalucia_-28Spain-29"/>
+		<swivt:wikiNamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</swivt:wikiNamespace>
+		<swivt:wikiPageContentLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</swivt:wikiPageContentLanguage>
+		<dc:coverage rdf:resource="&wiki;Andalucía"/>
+		<property:Creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instituto de Estadística y Cartografía</property:Creator>
+		<dc:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web (not structured)</dc:format>
+		<dc:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">csv</dc:format>
+		<dc:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spanish</dc:language>
+		<dc:publisher rdf:resource="&wiki;Instituto_de_Estadística_y_Cartografía"/>
+		<property:Rights rdf:resource="&wiki;CC0"/>
+		<dc:source rdf:resource="&wiki;Https-3A//www.juntadeandalucia.es/institutodeestadisticaycartografia/badea/operaciones/consulta/anual/44088?CodOper=b3_2314-26codConsulta=44088-2C"/>
+		<dc:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biomedical</dc:subject>
+		<dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daily cases and pandemic evolution in Andalucia (Spain)</dc:title>
+		<property:Has_query rdf:resource="&wiki;Covid-2D19._Daily_cases_and_pandemic_evolution_in_Andalucia_-28Spain-29-23_QUERY93eb9b3402771ddb5cbaf7d2c4ffadb7"/>
+		<swivt:wikiPageModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-08-31T12:33:06Z</swivt:wikiPageModificationDate>
+		<property:Modification_date-23aux rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2459458.0229861</property:Modification_date-23aux>
+		<swivt:wikiPageSortKey rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Covid-19. Daily cases and pandemic evolution in Andalucia (Spain)</swivt:wikiPageSortKey>
+		<property:Date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-24Z</property:Date>
+		<property:Date-23aux rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2459450.5</property:Date-23aux>
+	</swivt:Subject>
+	<swivt:Subject rdf:about="http://wiki.cost-dkg.eu/id/Covid-2D19._Daily_cases_and_pandemic_evolution_in_Andalucia_-28Spain-29-23_QUERY93eb9b3402771ddb5cbaf7d2c4ffadb7">
+		<swivt:masterPage rdf:resource="&wiki;Covid-2D19._Daily_cases_and_pandemic_evolution_in_Andalucia_-28Spain-29"/>
+		<swivt:wikiNamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</swivt:wikiNamespace>
+		<property:Query_depth rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1</property:Query_depth>
+		<property:Query_format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plainlist</property:Query_format>
+		<property:Query_size rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4</property:Query_size>
+		<property:Query_string rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[-Has subobject::Covid-19. Daily cases and pandemic evolution in Andalucia (Spain)]] [[Type::TemporalInterval]]</property:Query_string>
+		<swivt:wikiPageSortKey rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Covid-19. Daily cases and pandemic evolution in Andalucia (Spain)# QUERY93eb9b3402771ddb5cbaf7d2c4ffadb7</swivt:wikiPageSortKey>
+	</swivt:Subject>
+	<owl:DatatypeProperty rdf:about="http://semantic-mediawiki.org/swivt/1.0#creationDate" />
+	<owl:Class rdf:about="http://purl.org/dc/dcmitype/Dataset" />
+	<owl:ObjectProperty rdf:about="http://semantic-mediawiki.org/swivt/1.0#page" />
+	<owl:DatatypeProperty rdf:about="http://semantic-mediawiki.org/swivt/1.0#wikiNamespace" />
+	<owl:DatatypeProperty rdf:about="http://semantic-mediawiki.org/swivt/1.0#wikiPageContentLanguage" />
+	<owl:ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/coverage" />
+	<owl:DatatypeProperty rdf:about="http://wiki.cost-dkg.eu/id/Property-3ACreator" />
+	<owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/format" />
+	<owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/language" />
+	<owl:ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/publisher" />
+	<owl:ObjectProperty rdf:about="http://wiki.cost-dkg.eu/id/Property-3ARights" />
+	<owl:ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/source" />
+	<owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/subject" />
+	<owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/title" />
+	<owl:ObjectProperty rdf:about="http://wiki.cost-dkg.eu/id/Property-3AHas_query" />
+	<owl:DatatypeProperty rdf:about="http://semantic-mediawiki.org/swivt/1.0#wikiPageModificationDate" />
+	<owl:DatatypeProperty rdf:about="http://wiki.cost-dkg.eu/id/Property-3AModification_date-23aux" />
+	<owl:DatatypeProperty rdf:about="http://semantic-mediawiki.org/swivt/1.0#wikiPageSortKey" />
+	<owl:DatatypeProperty rdf:about="http://wiki.cost-dkg.eu/id/Property-3ADate" />
+	<owl:DatatypeProperty rdf:about="http://wiki.cost-dkg.eu/id/Property-3ADate-23aux" />
+	<owl:ObjectProperty rdf:about="http://semantic-mediawiki.org/swivt/1.0#masterPage" />
+	<owl:DatatypeProperty rdf:about="http://wiki.cost-dkg.eu/id/Property-3AQuery_depth" />
+	<owl:DatatypeProperty rdf:about="http://wiki.cost-dkg.eu/id/Property-3AQuery_format" />
+	<owl:DatatypeProperty rdf:about="http://wiki.cost-dkg.eu/id/Property-3AQuery_size" />
+	<owl:DatatypeProperty rdf:about="http://wiki.cost-dkg.eu/id/Property-3AQuery_string" />
+	<!-- Created by Semantic MediaWiki, https://www.semantic-mediawiki.org/ -->
+</rdf:RDF>
