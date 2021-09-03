@@ -7,8 +7,8 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix dkg: <http://w3id.org/dkg/data/> .
 @prefix dkg-onto: <http://w3id.org/dkg/ontology/> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
 
 #Knowledge Graph of COVID-19 Literature
 # what: citation network of COVID-19 papers
@@ -22,8 +22,10 @@
 # Presented at ISWC2020
 # publication: Steenwinckel B., Vandewiele G., Rausch I., Heyvaert P., Taelman R., Colpaert P., Simoens P., Dimou A., De Turck F. and Ongenae F. Facilitating COVID-19 Meta-analysis Through a Literature Knowledge Graph. In Proc. of 19th International Semantic Web Conference (ISWC), 2-6 November 2020
 
+<kg-covid-19-literature> a ldp:RDFSource;
+   rdfs:comment "Metadata document for the Knowledge Graph of COVID-19 Literature"@en .
 
-dkg:kg-covid-19-literature  a  dcat:Dataset, dkg-onto:Covid19-KG;
+<kg-covid-19-literature#this>  a  dcat:Dataset, dkg-onto:Covid19-KG;
    rdfs:label  "Knowledge Graph of COVID-19 Literature"@en;
    rdfs:comment  "KG about COVID literature, containing citation network of COVID-19 papers, from IDLab, Ghent"@en;
    dct:publisher  wd:Q1137665; # Ghent university
