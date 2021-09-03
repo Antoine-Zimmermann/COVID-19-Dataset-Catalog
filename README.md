@@ -1,2 +1,2 @@
 # COVID-19-Dataset-Catalog
-This repository contains metadata about COVID-19-related datasets all over the world.
+This repository contains metadata about COVID-19-related datasets all over the world. The aim is to describe, annotate, link to all COVID-related datasets of all types (statistics on infections, hospital admission, deaths and recovery, scientific publications and findings, legal actions and measures) and all formats (CSV, JSON, RDF, visual dashboards). There is one metadata document for each dataset.
