@@ -1,0 +1,72 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix schema: <http://schema.org/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+
+<w3c>  a  ldp:RDFSource;
+  rdfs:comment "Metadata document about W3C"@en;
+  dct:creator  <https://w3id.org/people/az> .
+
+<w3c#this>  a  org:Organization;
+  rdfs:label
+    "World Wide Web Consortium"@en,
+    "W3C"@en;
+  skos:prefLabel "W3C"@en;
+  rdfs:comment """The World Wide Web Consortium (W3C) is an international community where Member organizations, a full-time staff, and the public work together to develop Web standards. Led by Web inventor and Director Tim Berners-Lee and CEO Jeffrey Jaffe, W3C's mission is to lead the Web to its full potential. Contact W3C for more information. (from W3C's website)
+
+Interesting groups include:
+
+- Web of Things IG et WG et CG: différences
+- Data Exchange WG https://www.w3.org/2017/dxwg/
+- Spatial Data on the Web IG
+- Linked Building Data CG
+- Agriculture CG
+- Building Device Naming Standards CG (?)
+- Geospatial Semantic Web CG
+
+Note: some of the community groups are dormant, or weakly active."""@en;
+  rdfs:seeAlso  <https://www.w3.org/>;
+  locn:address  [
+    a  locn:Address;
+    locn:fullAddress  """W3C/ERCIM
+2004, route des Lucioles
+Sophia-Antipolis
+06410 BIOT
+France""";
+    schema:addressCountry  wd:Q142; # France
+    wgs84:lat 43.6158131;
+    wgs84:long 7.0661913
+  ], [
+    a  locn:Address;
+    locn:fullAddress  """W3C/MIT
+105 Broadway
+Room 7-134
+Cambridge, MA 02142
+USA""";
+    schema:addressCountry  wd:Q30; # USA
+    wgs84:lat 42.3622608;
+    wgs84:long -71.0928793
+  ], [
+    a  locn:Address;
+    locn:fullAddress  """W3C/Keio
+5322 Endo, Fujisawa, Kanagawa 252-0882
+Japan""";
+    schema:addressCountry  wd:Q17; # Japan
+    wgs84:lat 35.3921769;
+    wgs84:long 139.430532
+  ], [
+    a  locn:Address;
+    locn:fullAddress  """Room G1116, New Main Building
+No. 37 Xueyuan Road, Haidian District
+Beijing, 100083
+P.R. China""";
+    schema:addressCountry  wd:Q148; # China
+    wgs84:lat 39.9824119;
+    wgs84:long 116.3408913
+  ];
+  owl:sameAs  wd:Q37033 .

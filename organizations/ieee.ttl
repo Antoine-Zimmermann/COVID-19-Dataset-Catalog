@@ -1,0 +1,32 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix schema: <http://schema.org/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+
+<ieee>  a  ldp:RDFSource;
+  rdfs:comment "Metadata document about IEEE"@en;
+  dct:creator  <https://w3id.org/people/az> .
+
+<ieee#this>  a  org:Organization;
+  rdfs:label
+    "Institute of Electrical and Electronics Engineers"@en,
+    "IEEE"@en;
+  skos:prefLabel "IEEE"@en;
+  rdfs:comment "IEEE is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity. Below, you can find IEEE's mission and vision statements. (from IEEE's website)"@en;
+  rdfs:seeAlso  <https://www.ieee.org/>;
+  locn:address  [
+    a  locn:Address;
+    locn:fullAddress  """IETF Administration LLC
+1000 N West Street, Suite 1200
+Wilmington, DE 19801
+USA""";
+    schema:addressCountry  wd:Q30; # USA
+    wgs84:lat 39.7471677;
+    wgs84:long -75.5521784
+  ];
+  owl:sameAs  wd:Q217082 .

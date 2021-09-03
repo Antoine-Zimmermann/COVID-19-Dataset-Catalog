@@ -1,0 +1,37 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix schema: <http://schema.org/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+
+<emse>  a  ldp:RDFSource;
+  rdfs:comment "Metadata document about EMSE"@en;
+  dct:creator  <https://w3id.org/people/az> .
+
+<emse#this>  a  org:Organization;
+  rdfs:label
+  	"École des mines de Saint-Étienne"@fr,
+  	"MINES Saint-Étienne"@fr,
+  	"EMSE"@fr,
+  	"École nationale supérieure des mines de Saint-Étienne"@fr;
+  skos:prefLabel "École des mines de Saint-Étienne"@fr;
+  rdfs:comment """École nationale supérieure des Mines de Saint-Étienne, also called École des Mines de Saint-Étienne (literally meaning "Saint-Étienne school of mines") or simply Mines Saint-Étienne and commonly abbreviated EMSE is a prestigious French graduate engineering school (grandes écoles) training engineers and carrying out industry-oriented research. Its function is to support the development of its students and of companies through a range of courses and fields of research, from the initial training of generalist engineers ingénieurs civils des mines, to PhD teaching; from material sciences to micro-electronics via process engineering, mechanics, the environment, civil engineering, finance, computer science and health engineering. (from English Wikipedia)"""@en;
+  rdfs:seeAlso  <https://www.mines-stetienne.fr/>;
+  locn:address  [
+    a  locn:Address;
+    locn:fullAddress  """158, cours Fauriel
+CS 62362
+F‑42023 Saint‐Étienne cedex 2
+France""";
+    schema:addressCountry  wd:Q142; # France
+    wgs84:lat 45.4233726;
+    wgs84:long 4.4055691
+  ];
+  owl:sameAs  wd:Q3578252;
+  org:subOrganizationOf
+    wd:Q7885718, # IMT
+    wd:Q10176 . # Université de Lyon
